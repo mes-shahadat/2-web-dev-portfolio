@@ -7,6 +7,10 @@
     font-family: "Open Sans", sans-serif;
 }
 
+::selection {
+    background-color: rgb(253, 110, 10);
+}
+
 nav {
     border: 1px solid transparent;
     padding: 20px;
