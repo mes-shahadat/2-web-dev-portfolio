@@ -8,7 +8,7 @@
 }
 
 ::selection {
-    background-color: rgb(253, 110, 10);
+    background-color: rgba(253, 110, 10, 0.5);
 }
 
 nav {
