@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+nav {
+    border: 1px solid transparent;
+    padding: 20px;
+}
+
+nav img {
+    float: left;
+    margin-left: 40px;
+    max-height: 97vh;
+}
+
+nav div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 75%;
+    margin: 15px 0 0 220px;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    align-items: baseline;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav h3 {
+    font-size: 40px;
+}
+
+/* ##################### utility class ########################## */
+
+.text-primary {
+    color: rgb(253, 110, 10);
+}
+
+.text-secondary {
+    color: rgb(117, 117, 117);
+}
+
+.btn-primary {
+    background-color: rgb(253, 110, 10);
+    color: white;
+    padding: 18px 35px;
+    border: 1px solid rgb(253, 110, 10);
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    background-color: rgb(255, 248, 243);
+    color: rgb(253, 110, 10);
+    padding: 18px 35px;
+    border: 1px solid rgb(253, 110, 10);
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* ################### banner ########################### */
+
+nav header {
+    background-color: rgb(255, 248, 243);;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("./images/header_bg.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.banner-details {
+    margin-left: 70px;
+    max-width: 40%;
+}
+
+.banner-details h3 {
+    font-size: 50px;
+}
+.banner-details h1 {
+    font-size: 80px;
+}
+.banner-details p {
+    line-height: 25px;
+}
+
+.banner-details button {
+    line-height: 25px;
+}
+
+.banner-details > * {
+    margin: 15px 20px;
+}
+
+.banner-img {
+    max-width: 50%;
+    margin-top: 40px;
+}
+
+.banner-img img {
+    width: 90%;
+    margin-bottom: -5px;
+}
+
+/* ##################### main ##################### */
+
+.about-me {
+    border: 2px solid transparent;
+    width: 70%;
+    margin: 125px auto;
+    background-color: rgb(255, 248, 243);
+    border-radius: 5px;
+}
+
+.about-me > div  {
+    margin: 190px;
+    background-color: white;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.about-me p {
+    line-height: 25px;
+}
+
+.about-me > div > p {
+    margin: 30px 0;
+}
+
+.about-me-details {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-me-details span {
+    font-weight: bold;
+}
+
+/* ################### skill section ######################## */
+
+.skill {
+    width: 70%;
+    margin: auto;
+}
+
+.skill header {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.skill header h1 {
+    font-size: 40px;
+}
+
+.skill header p {
+    line-height: 25px;
+    margin: 40px 0;
+}
+
+.skill div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill .card {
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(128, 128, 128, 0.1);
+}
+
+.skill .card img {
+    width: 20%;
+}
+
+.skill .card h3 {
+    margin: 30px 0;
+}
+
+.skill .card p {
+    line-height: 25px;
+}
+
+/* ####################### summery ######################### */
+
+.summery {
+    width: 70%;
+    margin: auto;
+}
+
+.summery > h1 {
+    font-size: 40px;
+    text-align: center;
+    margin: 100px 0;
+}
+
+.summery > div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.summery > div > div {
+    max-width: 500px;
+}
+
+.column-1>h1, .column-2>h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.column-1>div>h3, .column-2>div>h3 {
+    margin: 15px 0;
+}
+
+.column-1>div>p, .column-2>div>p {
+    line-height: 28px;
+}
+
+.column-1>div>hr, .column-2>div>hr {
+    margin: 25px 0;
+}
+
+.summery button {
+    margin: 50px 0;
+}
+
+/* ###################### footer #################### */
+
+footer {
+    background-color: rgb(255, 248, 243);
+}
+
+footer > div {
+    width: 70%;
+    margin: auto;
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .info, footer .form {
+    width: 49%;
+}
+
+footer .info h1, footer .form h1 {
+    font-size: 35px;
+    margin: 20px 0;
+}
+
+footer img {
+    margin: 20px 10px 0 0;
+    cursor: pointer;
+}
+
+input[type="text"], input[type="email"], textarea {
+    padding: 20px 30px;
+    margin: 15px 0;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+    outline: 2px solid rgb(253, 110, 10);
+}
