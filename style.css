@@ -9,6 +9,8 @@
 
 ::selection {
     background-color: rgba(253, 110, 10, 0.5);
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 nav {
@@ -84,7 +86,8 @@ nav h3 {
 /* ################### banner ########################### */
 
 nav header {
-    background-color: rgb(255, 248, 243);;
+    background-color: rgb(255, 248, 243);
+    ;
 }
 
 .banner {
@@ -104,9 +107,11 @@ nav header {
 .banner-details h3 {
     font-size: 50px;
 }
+
 .banner-details h1 {
     font-size: 80px;
 }
+
 .banner-details p {
     line-height: 25px;
 }
@@ -115,7 +120,7 @@ nav header {
     line-height: 25px;
 }
 
-.banner-details > * {
+.banner-details>* {
     margin: 15px 20px;
 }
 
@@ -139,7 +144,7 @@ nav header {
     border-radius: 5px;
 }
 
-.about-me > div  {
+.about-me>div {
     margin: 190px;
     background-color: white;
     border: 1px solid rgba(128, 128, 128, 0.3);
@@ -151,7 +156,7 @@ nav header {
     line-height: 25px;
 }
 
-.about-me > div > p {
+.about-me>div>p {
     margin: 30px 0;
 }
 
@@ -219,35 +224,40 @@ nav header {
     margin: auto;
 }
 
-.summery > h1 {
+.summery>h1 {
     font-size: 40px;
     text-align: center;
     margin: 100px 0;
 }
 
-.summery > div {
+.summery>div {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
-.summery > div > div {
+.summery>div>div {
     max-width: 500px;
 }
 
-.column-1>h1, .column-2>h1 {
+.column-1>h1,
+.column-2>h1 {
     font-size: 30px;
     margin-bottom: 30px;
 }
 
-.column-1>div>h3, .column-2>div>h3 {
+.column-1>div>h3,
+.column-2>div>h3 {
     margin: 15px 0;
 }
 
-.column-1>div>p, .column-2>div>p {
+.column-1>div>p,
+.column-2>div>p {
     line-height: 28px;
 }
 
-.column-1>div>hr, .column-2>div>hr {
+.column-1>div>hr,
+.column-2>div>hr {
     margin: 25px 0;
 }
 
@@ -261,7 +271,7 @@ footer {
     background-color: rgb(255, 248, 243);
 }
 
-footer > div {
+footer>div {
     width: 70%;
     margin: auto;
     padding: 100px 0;
@@ -269,11 +279,13 @@ footer > div {
     justify-content: space-between;
 }
 
-footer .info, footer .form {
+footer .info,
+footer .form {
     width: 49%;
 }
 
-footer .info h1, footer .form h1 {
+footer .info h1,
+footer .form h1 {
     font-size: 35px;
     margin: 20px 0;
 }
@@ -283,7 +295,9 @@ footer img {
     cursor: pointer;
 }
 
-input[type="text"], input[type="email"], textarea {
+input[type="text"],
+input[type="email"],
+textarea {
     padding: 20px 30px;
     margin: 15px 0;
     width: 100%;
@@ -291,6 +305,126 @@ input[type="text"], input[type="email"], textarea {
     border-radius: 5px;
 }
 
-input[type=text]:focus, input[type=email]:focus, textarea:focus {
+input[type=text]:focus,
+input[type=email]:focus,
+textarea:focus {
     outline: 2px solid rgb(253, 110, 10);
+}
+
+
+/* ###################### mobile responsive ########################### */
+.hide {
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    nav img {
+        width: 10%;
+        margin: 0;
+        position: absolute;
+    }
+
+
+    nav div {
+        margin: auto;
+        gap: 20px;
+    }
+
+    nav button.btn-primary {
+        padding: .5rem;
+    }
+
+    /* hero section */
+    .banner {
+        text-align: center;
+        flex-direction: column-reverse;
+    }
+
+    .banner-details {
+        text-align: center;
+        margin: 0;
+        max-width: 100%;
+    }
+
+    /* about me */
+    .about-me {
+        margin: 0;
+        width: 100%;
+    }
+
+    .about-me div {
+        margin: 10px;
+    }
+
+    .about-me-details {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    /* skill */
+    section.skill {
+        width: 95%;
+        margin: 5%;
+    }
+
+    .skill .cards {
+        flex-wrap: wrap;
+    }
+
+    .skill div {
+        justify-content: space-evenly;
+    }
+
+    .skill header {
+        width: 90%;
+    }
+
+
+    /* summery */
+    .summery {
+        width: 90%;
+        /* margin: auto; */
+    }
+
+
+    .summery>div {
+        flex-direction: column;
+    }
+
+
+    .summery>div>div {
+        max-width: 100%;
+    }
+
+    .column-2>h1 {
+        margin-top: 30px;
+    }
+
+    .summery button {
+        width: max-content;
+    }
+
+    /* footer */
+    footer>div {
+        width: 90%;
+        flex-direction: column;
+        padding: 30px;
+    }
+
+
+    footer .info,
+    footer .form {
+        width: 99%;
+    }
+
+    textarea {
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 547px) {
+
+    nav div {
+        flex-direction: column;
+    }
 }
